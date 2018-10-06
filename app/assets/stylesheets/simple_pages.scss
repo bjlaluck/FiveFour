@@ -9,11 +9,17 @@ h1 {
   text-align: center;
   font-weight: 600;
 }
-.section-start::before {
+
+
+.imp-messages::before {
   display: block;
   content: " ";
-  height: 5.0em;
+  height: 2.0em;
   margin: -2em 0 0;
+}
+
+.imp-messages {
+  margin-bottom:-30px;
 }
 .resume a:active {
   color: red;
@@ -88,7 +94,7 @@ img {
 
 .image-carousel {
   width: 1200px;
-  
+
   object-fit:scale-down;
 }
 

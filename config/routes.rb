@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  devise_for :users
+  resources :users
   get 'simple_pages/landing_page'
   resources :products
   get 'simple_pages/about'
