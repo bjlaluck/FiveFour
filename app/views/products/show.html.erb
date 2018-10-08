@@ -1,0 +1,33 @@
+<div class="container-fluid section-start" id="show-product">
+  <p id="notice"><%= notice %></p>
+
+  <h1>Showing Product: <%= @product.name %> </h1>
+  <p>
+    <h2>Name:</h2>
+    <%= @product.name %>
+  </p>
+
+  <p>
+    <h2>Description:</h2>
+    <%= @product.description %>
+  </p>
+
+  <p >
+    <h2>Image url:</h2>
+    <%= @product.image_url %>
+  </p>
+
+  <p >
+    <h2>Cost:</h2>
+    <%= @product.price %>
+  </p>
+
+  <p class="last-section-p">
+    <h2>Colour</h2>
+    <%= @product.colour %>
+  </p>
+
+
+  <%= link_to 'Edit', edit_product_path(@product), class: "btn btn-info bottom-link" %>
+  <%= link_to 'Back', request.referer, class: "btn btn-warning bottom-link" %>
+</div>
