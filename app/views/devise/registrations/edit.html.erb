@@ -1,8 +1,8 @@
 <div class="container-fluid section-start created" >
     <div class="form-align">
-    <h2>Edit <%= resource_name.to_s.humanize %></h2>
+    <h2>Edit Password for <%= resource_name.to_s.humanize %></h2>
 
-    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, class='middle-screen' }) do |f| %>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, class: 'middle-screen' }) do |f| %>
       <%= devise_error_messages! %>
 
       <div class="field form-group">

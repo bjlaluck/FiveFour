@@ -2,9 +2,13 @@
 
 
 
-  <%= render 'products/form', product: @product %>
 
-  <%= link_to 'Previous', simple_pages_admin_path, class: "btn btn-success bottom-link" %>
-  <%= link_to 'Next', simple_pages_admin_path, class: "btn btn-warning bottom-link" %>
 
+
+
+
+  <%= link_to 'Change password', edit_user_registration_path(@user), class: "btn btn-warning bottom-link" %><br>
+
+  <%= link_to 'Show user info', user_path(@user), class: "btn btn-warning bottom-link" %><br>
+<%= link_to 'Edit user info', edit_user_path(@user), class: "btn btn-success bottom-link" %><br><br>
 </div>

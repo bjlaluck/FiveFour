@@ -14,7 +14,7 @@ class SimplePagesController < ApplicationController
 
   def admin
 
-    @product = Product.first
+    @user = current_user.id
 
   end
 

@@ -63,10 +63,17 @@
       </div><!-- end nav container-->
     </nav><!-- end navbar -->
 
-    <div class="imp-messages">
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-    </div>
+    <% if notice %>
+        <div class=imp-messages>
+        <p class="notice alert alert-danger" role="alert"><%= notice %></p>
+      </div>
+      <% end %>
+
+      <% if alert %>
+      <div class=imp-messages>
+        <p class="alert alert-danger" role="alert"><%= alert %></p>
+        </div>
+      <% end %>
 
     <%= yield %>
 
