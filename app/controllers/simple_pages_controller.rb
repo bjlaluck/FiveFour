@@ -13,9 +13,11 @@ class SimplePagesController < ApplicationController
   end
 
   def admin
-
-    @user = current_user.id
-
+    if current_user
+      @user = current_user.id
+    else
+      redirect_to orders_path
+    end
   end
 
 
