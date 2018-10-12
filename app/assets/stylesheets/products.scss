@@ -34,3 +34,59 @@ hr {
    border-top: 1px solid #aaaaaa;
    border-bottom: 1px solid #ffffff;
 }
+
+.side-to-side {
+  display: inline-block;
+  text-align: center;
+  font-family: Cousine, Lucida, Courier, monospace;
+  font-size: 2em;
+
+}
+
+.better-text {
+  display: inline-block;
+  font-family:  Merriweather, Lucida, Garamond, serif;
+  font-size: 1.33em;
+  font-weight: 100;
+}
+
+.wrapper {
+  overflow:hidden;
+}
+
+#one {
+  float:left;
+  margin-right:10px;
+  margin-top:5px;
+}
+
+#two {
+  background-color: white;
+  overflow:hidden;
+}
+
+@media screen and (max-width: 720px) {
+   #one {
+    float: none;
+    margin-right:0;
+    width:auto;
+  }
+}
+.side-to-side {
+  display: inline-block;
+  text-align: center;
+  font-family: Cousine, Lucida, Courier, monospace;
+  font-size: 2em;
+
+}
+
+.better-text {
+  display: inline-block;
+  font-family:  Merriweather, Lucida, Garamond, serif;
+  font-size: 1.33em;
+  font-weight: 100;
+}
+
+.in-wrap {
+  display: block;
+}
