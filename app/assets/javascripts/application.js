@@ -14,6 +14,7 @@
 //= require activestorage
 //= require turbolinks
 //= require jquery3
+//= require jquery.raty
 //= require_tree .
 if (window.parent && window.parent.parent){
     window.parent.parent.postMessage(["resultsFrame", {
