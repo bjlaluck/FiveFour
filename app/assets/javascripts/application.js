@@ -14,11 +14,5 @@
 //= require activestorage
 //= require turbolinks
 //= require jquery3
-//= require jquery.raty
+//= require jquery.raty.js
 //= require_tree .
-if (window.parent && window.parent.parent){
-    window.parent.parent.postMessage(["resultsFrame", {
-      height: document.body.getBoundingClientRect().height,
-      slug: "cUCvY"
-    }], "*")
-  }

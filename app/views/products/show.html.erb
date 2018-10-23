@@ -24,11 +24,16 @@
       <div class="better-text"><%= @product.price %></div>
     </p>
 
-    <p class="last-section-p">
+    <p>
       <div class="side-to-side">Colour:</div>
       <div class="better-text"><%= @product.colour %></div>
     </p>
-  </div>
+
+    <p class="last-section-p">
+      <div class="side-to-side">Average Rating:</div>
+      <div class="rated better-text" data-score="<%= @product.average_rating %>"></div>
+    </p>
+</div>
 
 
 
