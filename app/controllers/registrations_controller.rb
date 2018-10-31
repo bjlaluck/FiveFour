@@ -5,7 +5,7 @@ class RegistrationsController < Devise::RegistrationsController
 
   def create
     super do
-        @email = params[:email]
+        @email = resource.email
         UserMailer.new_user_form(@email).deliver_now
 
 
