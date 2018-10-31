@@ -1,4 +1,4 @@
-class UserMailer < ApplicationMailer
+class NewuserMailer < ApplicationMailer
   default from: "bohdanlaluck@hotmail.com"
 
   def contact_form(email, name)
