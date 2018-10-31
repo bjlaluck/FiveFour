@@ -8,13 +8,15 @@ class RegistrationsController < Devise::RegistrationsController
       @name = params[:name]
       @email = params[:email]
 
-  =begin
-      ActionMailer::Base.mail(from: @email,
-        to: 'bohdanlaluck@hotmail.com',
-        subject: "A new contact form message from #{@name}",
-        body: @message).deliver_now
-  =end
-      NewUserMailer.new_user_form(@email, @name).deliver_now
+=begin
+      ActionMailer::Base.mail(from: 'bohdanlaluck@hotmail.com',
+        to: @email,
+        subject: "#{@name}, Welcome to Bikes Berlin",
+        body: 'Test').deliver_now
+=end
+
+    NewuserMailer.new_user_form(@email, @name).deliver_now
+
     end
   end
 
