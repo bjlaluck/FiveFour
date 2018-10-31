@@ -15,7 +15,7 @@ class RegistrationsController < Devise::RegistrationsController
         body: 'Test').deliver_now
 =end
 
-    NewuserMailer.new_user_form(@email, @name).deliver_now
+    UserMailer.new_user_form(@email, @name).deliver_now
 
     end
   end
